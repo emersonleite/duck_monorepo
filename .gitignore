@@ -34,3 +34,12 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# parcel
+.parcel-cache
+
+# dist
+dist
+
+# vite timestamp
+**.timestamp**

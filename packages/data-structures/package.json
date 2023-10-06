@@ -1,0 +1,43 @@
+{
+  "name": "data-structures",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/data-structures.umd.cjs",
+  "module": "./dist/data-structures.js",
+  "types": "./dist/index.d.ts",
+  "description": "This is a simple utility package",
+  "author": "Emerson Leite <emerson.leite@evacard.com.br>",
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.evacard.com.br/eva/data-structures.git"
+  },
+  "keywords": [
+    "Eva",
+    "utilities",
+    "frontend"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/data-structures.js",
+      "require": "./dist/data-structures.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "update-latest": "pnpm up --latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.3",
+    "tsconfig": "workspace:*",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.0.2"
+  }
+}
